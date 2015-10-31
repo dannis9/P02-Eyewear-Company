@@ -1,0 +1,870 @@
+
+body {
+  left: 0;
+  margin: 0; /* 0px on top*/
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  font-family: "Roboto", "Lato",sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cover-photo {
+  background: url("../img/bg0.jpg");
+  width:100%;
+  height: 805px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cover-photo2 {
+  background: url("../img/bg0.jpg");
+  width:100%;
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#cover-photo-title {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  position: absolute;
+  top:250px;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  text-transform: uppercase;
+}
+
+
+/*------------------------open menu bar-----------------------------*/
+.menu {
+  background: black;
+  left: -200px;  /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 200px;
+  top: 0px;
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  padding: 1em;
+  color: #3bcab1;
+  font-size: 1em;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 70%;
+  vertical-align: middle;
+  top:10em;
+  transition: color 0.5s, background 0.5s;
+}
+
+.menu li:hover {
+  width: 120px;
+  border-bottom: 1px solid white;
+  color: #3bcab1;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition:0.6s ease;
+  -webkit-transition:0.6s ease;
+  -moz-transition:0.6s ease;
+}
+
+.menu a {
+  color: #3bcab1;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-close {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 6px;
+  text-align: left;
+}
+
+/*-----------------------navigation------------------------------*/
+.brandname {
+  font-family: "lato";
+  color:black;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left:0;
+  right:0;
+}
+
+.bag a{
+  font-family: "lato";
+  color:black;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-decoration: none;
+  position: absolute;
+  top: 16px;
+  right:0;
+  padding-right: 20px;
+}
+
+.bag a:hover {
+  color:#3bcab1;
+}
+
+.icon-menu {
+  color: black;
+  cursor: pointer;
+  font-family: 'lato', sans-serif;
+  font-size: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  position: fixed;
+  top: 10px;
+
+}
+
+.icon-menu i {
+  margin-right: 5px;
+}
+
+#scrolldown {
+  top: -220px;
+  margin-left: -50px;
+  position: relative;
+  left: 50%;
+  text-align: center;
+  width: 100px;
+  z-index: 100;
+}
+#scrolldown p {
+  font: 700 0.7em/1em 'Roboto',sans-serif;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+  color: rgba(0,0,0,.2);
+}
+#scrolldown > p {
+  text-transform: uppercase;
+  text-indent: 3px;
+}
+.mouse {
+  border: 2px solid rgba(0,0,0,.2);
+  border-radius: 13px;
+  display: block;
+  height: 46px;
+  left: 50%;
+  margin: 10px 0 0 -13px;
+  position: absolute;
+  width: 26px;
+}
+.mouse span {
+  display: block;
+  font-size: 1.5em;
+  margin: 6px 5px;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+/*-----------------------body------------------------------*/
+.body-container {
+  width: 80%;
+  margin:0 auto;
+}
+
+.body-text {
+  font-size: 1em;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 5em;
+}
+/*-----------------------sunglasses products------------------------------*/
+[class^='grid-col-'] {
+    float: left;
+    padding: 0;
+    text-align: center;
+}
+
+[class^='grid-col-3of3'] {
+    float: left;
+    margin:  1em 1em 1em 1em;
+    display: block;
+    position:relative;
+    width: 30%;
+}
+
+.grid-col-3of3 {  
+  text-decoration: none;
+}
+
+.imgsize {
+  width: 60%; 
+  height: 60%;
+
+}
+.imgsize:hover {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: transform 0.2s 0.1s ease-in, opacity 0.5s ease-in-out;
+}
+
+section {
+  font-family: "Lato";
+  letter-spacing: 2px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-family: "lato",sans-serif;
+  padding: 30px;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+
+.productseries {
+  text-align: center;
+  font-size: 1em;
+  margin: 2em;
+  letter-spacing: 2px;
+}
+
+.productlist_name {
+  font-size: 0.7rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.product_text {
+  text-decoration: none;
+}
+
+
+/*-----------------------productlist------------------------------*/
+
+.productimg {
+  float: left;
+  max-width: 100%; 
+  height: auto;
+}
+
+.buy a{
+  font-family: "lato";
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #3bcab1;
+  display: inline-block;
+  margin: 1em 0em;
+   padding:1em 3em;
+  letter-spacing: 1px;
+}
+
+.buy a:hover {
+  letter-spacing: 2px;
+  opacity: 0.8;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.more a {
+  text-align: center;
+  color:white;
+  background-color: #3bcab1;
+  text-decoration: none;
+  padding:1em 3em;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.more:hover a{
+  letter-spacing: 2px;
+  opacity: 0.8;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+/*-----------------------slideshow------------------------------*/
+
+#slideimage {
+ width:60%;
+}
+
+#imagebox {
+  width:100%;
+
+}
+
+.imageGallery {
+  left: 10px;
+  padding: 4em 3em 0em 0em ;
+}
+
+.imageGallery-featured {
+  display: block;
+
+}
+
+.imageGallery-featured > * {
+  display: none;
+}
+
+.imageGallery-featured img {
+  max-width: 100%;
+}
+
+.imageGallery-featured > .isActive {
+  display: block;
+}
+
+.imageGallery-thumbs {
+  display: block;
+  margin-top: 20px;
+  overflow: hidden;
+  width: 100%;
+  list-style-type: none;  /*get rid off bullets*/
+}
+
+.imageGallery-thumbs > * {
+  max-width: 20%;
+  float: left;
+  padding: 4px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
+}
+
+.imageGallery-thumbs img {
+  max-width: 100%;
+}
+
+.imageGallery-thumbs > .isActive {
+  border-color: #3bcab1;
+}
+
+.imageGallery-thumbs img {
+  margin: 0 auto;
+  display: block;
+}
+
+.imageGallery-thumbs img:hover {
+  cursor: pointer;
+}
+
+.rating-stars-wrapper {
+  font-size: 2em;
+  width: 10em;
+  margin: 0.5em auto;
+  text-align: center;
+}
+.rating-stars-wrapper .rating-stars {
+  display: block;
+
+}
+
+.rating-stars:before, .rating-stars:after {
+  color: #3bcab1;
+
+}
+.rating-stars:after {
+  color: #cccccc;
+
+}
+
+.rating-4:before {
+  content: "\2b51 \2b51 \2b51 \2b51";
+}
+
+.rating-4:after {
+  content: "\2b51";
+}
+
+.review {
+  text-decoration:underline;
+  cursor: pointer;
+  padding:0;
+}
+.review label{
+  color:black;
+  font-size: 1em;
+  text-align: center;
+}
+.review:hover {
+  color:#3bcab1;
+}
+.review + input{
+  display:none;
+}
+.review + input + *{
+  display:none;
+}
+.review+ input:checked + *{
+  display:block;
+}
+
+.rates {
+  padding-top: 0.5em;
+  font-size: 0.7em;
+}
+
+.feedback {
+  padding-top: 2em;
+  font-size: 0.5em;
+  text-align: left;
+}
+
+.rating {
+  width: 350px;
+  margin: 0 auto 1em;
+  font-size: 1.5em;
+  overflow:hidden;
+}
+
+textarea {
+  margin: 0.5em;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  direction: ltr;
+}
+
+.rating input {
+  float: right;
+  opacity: 0;
+  position: absolute;
+}
+    .rating a,
+    .rating label {
+      float:right;
+      color: #aaa;
+      text-decoration: none;
+      -webkit-transition: color .4s;
+      -moz-transition: color .4s;
+      -o-transition: color .4s;
+      transition: color .4s;
+    }
+
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover,
+    .rating a:hover,
+    .rating a:hover ~ a,
+    .rating a:focus,
+    .rating a:focus ~ a   {
+      color: #3bcab1;
+      cursor: pointer;
+    }
+    .rating2 {
+      direction: rtl;
+    }
+    .rating2 a {
+      float:none;
+    }
+div.stars {
+  width: 270px;
+  display: inline-block;
+}
+
+input.star {
+  display: none;
+}
+
+textarea.review {
+  background: #222;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #EEE;
+}
+
+label.review {
+  display: block;
+  transition: opacity .25s;
+}
+
+
+/*-----------------------About Us------------------------------*/
+#aboutus {
+  /*width:80%;*/
+}
+.about {
+  width:60%;
+  padding: 60px 0px 60px 0px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.about h2 {
+  margin: 10px;
+  top: 50px;
+  padding-bottom: 2em;
+}
+
+.about_para, .about_para1 {
+  text-align: left;
+  font-family: 'lato', sans-serif;
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  letter-spacing: 1px;
+}
+
+
+.middle-parallax-photo {
+  background: url("../img/1.jpg");
+  width:100%;
+  height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*-----------------------Contacts------------------------------*/
+#contact {
+  max-width: 80%;
+}
+
+.contacts {
+  height: 1500px;
+  background-color: white;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.form-container { 
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.contacts p {
+  text-align: center;
+  font-family: 'lato', sans-serif;
+  font-size: 1em;
+  padding: 0.3em;
+}
+
+.contact-info {
+  text-align: center;
+  font-size: 1em;
+}
+
+.icon {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.icon a{
+  text-decoration: none;
+}
+
+
+.form-field {
+  display: block;
+  height: 50px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+#name, #email, #subject, #comment {
+  padding: 0% 2%;
+}
+
+#comment {
+  resize: vertical;
+  height: 200px;
+  padding-top: 20px;
+  font-family: "lato";
+  width: 70%;
+}
+
+#send-form-btn {
+  padding: 20px 0px;
+  width: 25%;
+  font-size: 1em;
+  color: #fff;
+  border: none;
+  background-color: #3bcab1;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: "lato";
+  margin-top: 2em;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+#send-form-btn:hover {
+  letter-spacing: 2px;
+  opacity: 0.8;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+
+}
+
+footer {
+  background-color: #000;
+  height: 30px;
+  width: 100%;
+}
+
+.footer-container {
+  width: 66%;
+  margin:0 auto;
+  padding: 0px;
+  text-align: center;
+}
+
+.social-icons p {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+.design-by p {
+  color:white;
+  font-family: "Roboto";
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  bottom: 1px;
+  font-size: 0.6em;
+}
+
+/*----------------------service page--------------------------*/
+
+#service{
+  font-family: "Roboto";
+  letter-spacing: 0px;
+  width: 80%;
+  padding:8em 0em; 
+  height:710px;
+}
+
+.service_title{
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom:0.5em;
+}
+
+.text {
+  font-family: "lato", sans-serif;
+  width:80%;
+  color: #3d3636;
+  font-size: 0.8em;
+  text-align: left;
+  padding-left:10em;
+}
+
+
+/*-------------------events page----------------------*/
+#events {
+  font-family: "lato", sans-serif;
+  width: 80%;
+  padding:9em 0em;
+  height:1500px;
+}
+
+.magazine_img, .event_img {
+  float: left;
+  max-width: 100%; 
+  height: auto;
+}
+.magazine_box, .event_box{
+  padding: 0em 0em 9em 0em;
+
+}
+
+.magazine_title, .event_title{
+  font-family: "lato";
+  letter-spacing: 2px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  text-align: center;
+}
+.magazine_paragraph, .event_paragraph{
+  font-family: "lato";
+  padding: 1em 0em;
+  font-size: 0.8em;
+  width: 90%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.event_paragraph1{
+  font-family: "lato";
+  margin-top: -4em;
+  font-size: 0.8em;
+  width: 90%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  letter-spacing: 1px;
+}
+/*------------------shopping bag------------------------*/
+#bagbox {
+  font-family: "lato", sans-serif;
+  width: 80%;
+  height:700px;
+  padding:5em 0em;
+}
+
+.shopping_bag {
+  width:100%;
+}
+
+.shopping_bag h2{
+  margin-bottom: -1.5em;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.box {
+  font-size: 0.9em;
+  padding:0.5em;
+  text-align: center;
+}
+.close {
+  opacity: 0.5;
+  text-decoration: none;
+  color:white;
+  border-radius: 50%;
+  background-color: #3bcab1;
+  padding: 0 0.3em;
+}
+
+.close:hover {
+  opacity: 1;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+#twobutton {
+  width: 30%;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #3bcab1;
+  width:100%;
+  padding:1.2em;
+  margin-top: 10px;
+  position: relative;
+  font-size: 0.9em;
+}
+
+.button a {
+  text-align: center;
+  text-decoration: none;
+  color:white;
+  letter-spacing: 1px;
+}
+
+.button a:hover {
+  letter-spacing: 2px;
+  opacity: 0.8;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+div hr.second_line{
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/*------------------productlist------------------*/
+.lists {
+  padding: 2em;
+}
+
+#collection1 {
+  width:100%;
+}
+/*------------checkout-----------------------*/
+#checkout {
+  font-family: "lato",sans-serif;
+  width: 80%;
+  padding:8em 0em;
+  height: 1500px;
+}
+
+.input_box {
+  width:60%;
+  padding:1em;
+  margin: 0.3em;
+}
+.title {
+  padding-top: 1.5em;
+}
+.title2{
+  text-align: center;
+  font-family: "lato";
+  font-size: 0.9em;
+}
+
+.card_input_box {
+  width:60%;
+  padding:0.9em;
+  margin: 0.3em;
+}
+
+.input_box_cvc {
+  width:60%;
+  padding:1em;
+}

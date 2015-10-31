@@ -1,0 +1,618 @@
+.grid:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1500px) {
+  .grid-col-3of3 {
+    width: 30%;
+  }
+  .imgsize {
+    width: 70%; 
+    height: 70%;
+  }
+
+  .productseries {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+   #bagbox {
+    height:800px;
+  }
+/*--------------main page-------------------------*/
+  #sunglasses {
+    height:800px;
+  }
+  .about {
+    width:70%;
+  }
+
+  #googleMap {      
+  max-width: 96%;
+  height: 300px;
+  background-color: #CCC;
+  margin: 0.5rem;
+}
+
+/*---------------------------------------------*/
+  .productlist_name {
+    font-size: 0.8rem;
+  }
+
+  .more a{
+    text-align: center;
+    top: 2em;
+  }
+
+     /*---------service---------------*/
+  #service{
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    padding:0em 15em;
+  }
+
+}
+
+
+@media only screen and (max-width: 1214px) {
+  .grid-col-3of3 {
+    width: 29%;
+  }
+  .imgsize {
+    width: 80%; 
+    height: 80%;
+  }
+
+  .productseries {
+    font-size: 0.9em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+/*--------------------main page ------------------*/
+  #sunglasses {
+    height:800px;
+  }
+
+  .productlist_name {
+    font-size: 0.8rem;
+  }
+
+  .more a {
+    top: 2em;
+  }
+
+  #googleMap {      
+    max-width: 96%;
+  }
+   .about {
+    width:75%;
+  }
+  .about_para, .about_para1{
+    font-size: 0.9em;
+  }
+  #service{
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    padding:0em 10em;
+  }
+
+}
+
+@media only screen and (max-width: 938px) {
+  .grid-col-3of3 {
+    width:43%;
+  }
+  .imgsize {
+  width: 80%; 
+  height: 80%;
+}
+  
+  .productseries {
+    font-size: 0.8em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  #sunglasses {
+    height:1300px;
+  }
+
+  .productlist_name {
+    font-size: 0.6rem;
+  }
+  
+  .about {
+    width:80%;
+  }
+
+  #googleMap {      
+    max-width: 96%;
+    height: 300px;
+    background-color: #CCC;
+    margin: 0.5rem;
+  }
+  #send-form-btn {
+     width:45%;
+    }
+
+   /*---------service---------------*/
+  #service{
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    padding:0.1em 5em;
+  }
+  .more a {
+    top: 2em;
+  }
+
+}
+@media only screen and (max-width: 666px) {
+  .productlist_name {
+    font-size: 0.7rem;
+  }
+  #sunglasses {
+    height:1100px;
+  }
+  .about {
+    width: 90%;
+  }
+
+  #contact {
+    max-width: 90%;
+  }
+  .form-container {
+    max-width: 100%;
+  }
+
+  .form-field, #comment {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+ /*---------service---------------*/
+  #service{
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    padding:0.1em 3em;
+  }
+}
+
+@media only screen and (max-width: 586px) {
+  .grid-col-3of3 {
+    width:40%;
+  }
+  .imgsize {
+  width: 80%; 
+  height: 80%;
+}
+  
+  .productseries {
+    font-size: 0.8em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .productlist_name {
+    font-size: 0.6rem;
+  }
+  
+  #sunglasses {
+    height:1000px;
+  }
+
+  .about {
+    width:80%;
+  }
+
+  #googleMap {      
+  max-width: 96%;
+  height: 300px;
+  background-color: #CCC;
+  margin: 0.5rem;
+  }
+
+  .form-field, #comment {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  #send-form-btn {
+     width:45%;
+    }
+  .more a {
+      top: 2em;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+  #sunglasses {
+    height:1500px;
+  }
+  #listing {
+    height:1500px;
+  }
+  #listing1 {
+    height:2700px;
+  }
+
+    .menu {
+      left: -285px;  /* start off behind the scenes */
+      height: 100%;
+      position: fixed;
+    }
+
+    .brandname {
+      font-size: 1.2em;
+    }
+
+    .icon-menu {
+      padding-left: 10px;
+      top: 10px;
+    }
+    .bag {
+      padding-right: 10px;
+    }
+
+    .cover-photo {
+      height: 240px;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    #cover-photo-title {
+      font-size: 2.2em;
+      text-align: center;
+      position: absolute;
+      top: 150px;
+    }
+
+    #scrolldown, .mouse span {
+      overflow: hidden;  
+      font-size: 0;  
+    }
+
+/*--------------body-------------*/
+    .body-text {
+      font-size: 20px;
+
+    }
+     h1 {
+      font-size: 2em;
+    }
+    .body-container {
+      width: 85%;
+      height: 60px;
+      margin: auto;
+  
+    }
+    
+    .grid-col-3of3 {
+      width: 88%;
+    }
+    .grid-col-3of3:first-of-type {
+       padding-right: 0.5em;
+    }
+
+    .grid-col-3of3:last-of-type {
+      padding-left: 0.5em;
+    }
+    
+    .imgsize {
+      width: 80%; 
+      height: 80%;
+    }
+
+    .productseries {
+      font-size: 0.5em;
+    }
+    .productlist_name {
+     font-size: 0.6rem;
+    }
+    .productimg {
+      /*float: left;*/
+      max-width: 100%; 
+      height: auto;
+    }
+
+    .more a {
+      top: 2em;
+    }
+
+/*------------events page---------------*/
+  
+    #events {
+      font-family: "Roboto";
+      width: 100%;
+      padding:5em 0em;
+    }
+
+    .magazine_box, .event_box{
+      padding: 0em 0em 0em 0em;
+    }
+
+    .magazine_title, .event_title{
+      font-family: "lato";
+      letter-spacing: 2px;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: 0.8em;
+      text-align: center;
+    }
+    .magazine_paragraph, .event_paragraph{
+      font-family: "lato";
+      padding: 1em 0em;
+      font-size: 0.7em;
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+      letter-spacing: 1px;
+    }
+
+    .event_paragraph1{
+      font-family: "lato";
+      font-size: 0.7em;
+      width: 90%;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+      letter-spacing: 1px;
+    }
+/*-----------------------Contacts------------------------------*/
+.contacts {
+  width: 100%;
+  height: 950px;
+  background-color: white;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.form-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contacts h1 {
+  text-align: center;
+  margin: 10px;
+  padding-bottom: 30px;
+}
+
+.contacts p {
+  text-align: center;
+  font-family: 'lato', sans-serif;
+  font-size: 0.8em;
+  padding: 0.3em;
+}
+
+.contact-address {
+  padding-bottom: 40px;
+}
+
+.contact-info {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.icon {
+  margin-top: 10px;
+}
+.icon a{
+  text-decoration: none;
+}
+
+/*---------------product-----------------*/
+  .grid-col-2of3,.grid-col-1of3 {
+    width:100%;
+
+  }
+  #slideimage {
+   width:100%;
+  }
+
+  #imagebox {
+    width:100%;
+  }
+
+  #googleMap {      
+    max-width: 96%;
+    height: 300px;
+    background-color: #CCC;
+    margin: 0.5rem;
+  }
+  #twobutton {
+    width: 100%;
+  }
+
+  .name_box img{
+    width:100%;
+  }
+/*---------------footer--------------------*/
+    .form-container {
+      width: 100%;
+    }
+     #comment {
+      resize: vertical;
+      height: 150px;
+      width: 70%;
+    }
+    #send-form-btn {
+      width: 70%;
+    }
+ #bagbox {
+    height:800px;
+  }
+}
+
+
+@media only screen and (max-width: 914px) {
+    #twobutton {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+    .name_box img{
+    width: 80%;
+  }
+    #twobutton {
+    width: 50%;
+  }
+    #checkout, .input_box, .card_input_box, .input_box_cvc {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 553px) {
+    .name_box img{
+    width: 80%;
+  }
+    #twobutton {
+    width: 70%;
+  }
+    #checkout, .input_box, .card_input_box, .input_box_cvc {
+    width: 90%;
+  }
+      #sunglasses {
+    height:1900px;
+  }
+
+}
+@media only screen and (max-width: 424px) {
+    .name_box img{
+  width:100%;
+}
+  #twobutton {
+    width: 100%;
+  }
+    #sunglasses {
+    height:1800px;
+  }
+  }
+
+@media only screen and (max-width: 415px) and (max-width: 688px) {
+  .grid-col-3of3 {
+     width:90%;
+  }
+  #sunglasses {
+    height:1700px;
+  }
+    #send-form-btn {
+    width:50%;
+  }
+    .name_box img{
+    width: 100%;
+  }
+    #twobutton {
+    width: 100%;
+  }
+    #checkout, .input_box, .card_input_box, .input_box_cvc {
+    width: 90%;
+  }
+  #service{
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    padding:1em;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .grid-col-3of3 {
+     width:90%;
+  }
+  #sunglasses {
+    height:1700px;
+  }
+  #contact {
+    height:1500px;
+  }
+  #send-form-btn {
+    width:50%;
+  }
+  #slideimage {
+   width:100%;
+  }
+  #imagebox {
+    height:900px;
+  }
+  #bagbox {
+    height:800px;
+  }
+  .name_box img{
+    width: 100%;
+  }
+  #bagbox {
+    width: 100%;
+    padding:5em 0em;
+  }
+  #twobutton {
+    width: 100%;
+  }
+  #checkout, .input_box, .card_input_box, .input_box_cvc {
+    width: 100%;
+  }
+  .title2 {
+    font-size: 1em;
+  }
+  .input_box_cvc {
+    margin: 0.3em;
+  }
+
+  #service{
+    width: 100%;
+    height:900px;
+  }
+  .service_title{
+  font-size: 0.9em;
+}
+
+  .text {
+    width: 100%;
+    padding:0em;
+    font-size: 0.8em;
+  }
+
+  #comment {
+    width: 100%;
+  }
+  #events {
+    width: 100%;
+    padding:9em 0em;
+  }
+#events {
+    height:850px;
+}
+}
+
+}
+

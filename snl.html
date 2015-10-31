@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>SNL Eyewear</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      var myCenter=new google.maps.LatLng(49.187503, -122.850376);
+      var marker;
+
+      function initialize()
+      {
+      var mapProp = {
+        center:myCenter,
+        zoom:14,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+      var marker=new google.maps.Marker({
+        position:myCenter,
+        });
+
+      marker.setMap(map);
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+  </head>
+
+  <body>
+    <div class="menu">
+      <div class="icon-close">
+        ✕
+      </div>  <!-- end of icon-close-->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sunglasses">Sunglasses</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="bag.html">Bag</a></li>
+      </ul>
+    </div><!-- end of menu -->
+
+    <!-- Main body -->
+    <nav class="icon-bar" id="home">
+      <div class="brandname">SNL</div>
+      <div class="icon-menu">
+        <i class="fa fa-bars"></i>☰
+      </div> <!-- end of icon-menu -->
+      <div class="bag"><a href="bag.html">Bag(0)</a></div> 
+    </nav>
+
+    <section class="cover-photo"></section>
+
+    <section id="sunglasses">
+      <h1 id="cover-photo-title">Never Hide</h1>
+          <div id="scrolldown">
+              <p>scroll</p>
+              <div class="mouse">
+                <p><span>↓</span></p>
+              </div>
+            </div>
+
+      <div class="body-container">
+       <div class="body-text">
+          <h2>Sunglasses</h2>
+          <div class="productseries">- Super Andy Warhol The Illustrated Series -</div>
+           <div class="grid">
+            <div class="grid-col-3of3">
+
+          <a href="products.html" class="product_text">
+          <img src="img/productlist1.jpg" height="380" width="250" alt="productlist" class="imgsize" onmouseover="this.src='img/productlist1_hover.jpg';" onmouseout="this.src='img/productlist1.jpg';"/></a>
+            <p class="productlist_name">SUPER ANDY WARHOL BABYBABY<p>
+            <p class="productlist_name"><strong>$534.00</strong><p>
+         </div>
+          <div class="grid-col-3of3">
+             <a href="products.html" class="product_text">
+           <img src="img/productlist4.jpg" height="380" width="250" alt="productlist" class="imgsize" onmouseover="this.src='img/productlist4_hover.jpg';" onmouseout="this.src='img/productlist4.jpg';"/></a>
+           <p class="productlist_name">SUPER ANDY WARHOL NICOLOU<p>
+          <p class="productlist_name"><strong>$534.00</strong><p>
+         </div>
+
+          <div class="grid-col-3of3">
+             <a href="products.html" class="product_text">
+            <img src="img/productlist3.jpg" height="380" width="250" alt="productlist" class="imgsize" onmouseover="this.src='img/productlist3_hover.jpg';" onmouseout="this.src='img/productlist3.jpg';"/></a>
+            <p class="productlist_name">SUPER ANDY WARHOL ULTRACANDY<p>
+            <p class="productlist_name"><strong>$603.00</strong><p>
+
+         </div>    
+         </div><!-- end grid -->
+
+      <div class="more"><a href="sunglasses.html">View More</a></div>
+
+      </div> <!-- end of body-text -->
+    </div> <!-- end of body-container -->
+  </section>
+
+  <section class="middle-parallax-photo"></section>
+
+    <section class="about" id="aboutus">
+       <h2>About Us</h2>
+        <div class="about_para">Starting from a classic, clean silhouette, SNL has gradually built up their impressive collection, currently comprising of a long list of timeless yet cutting edge shapes. Silhouettes like the Flat Top, Ciccio, América, W, or distinctly feminine models like the Lucia and Drew, have become staples of SNL's collections and a continuous source of inspiration and playful interpretation by the brand's creative team.</div>
+        <div class="about_para1">In fact, SNL, entirely handmade in Italy, had the opportunity to collaborate with some of the world's best eyewear manufacturers and experiment with new production techniques, finishings, materials and detailing, while also adding a layer of quality eye-protection by teaming up with the exclusive German lens company ZEISS. Currently, each new SNL collection, consists of a selection and interpretation of their classic silhouettes, developed through constant research of new atmospheres, references, materials, finishings, colors, textures and shapes. SNL's roster also includes the groundbreaking Visiva collection, a series of seasonal and collectable sunglasses with experimental and printed acetates, also developed in collaboration with renowned artists; as well as a young and growing Optical, a line of classy but ultimately comfortable glasses for an all-day everyday use.</div>   
+
+    </section> <!-- end of full-width-picture-feed -->
+
+    <section class="contacts" id="contact">
+      <div class="form-container">
+        <h2>Contacts</h2>
+          <div class="body-text">
+            <div class="contact-address">
+              <p> 250 - 13450 – 102nd Avenue, Surrey, BC V3T 0A3</p>
+              <p class="contactinfo">(604) 939 - 4016</p>
+              <p class="contactinfo">snl@gmail.com</p>
+              
+      <div class="icon">
+        <a class="contact_link" href="https://www.facebook.com/">
+          <img class="icon" src="img/f.png" alt="facebook_icon" height="30" width="30">
+        </a>
+        <a  class="contact_link" href="https://instagram.com/">
+          <img class="icon" src="img/i.png" alt="instagram_icon" height="30" width="30">
+        </a>
+        <a class="contact_link" href="https://twitter.com/">
+          <img class="icon" src="img/t.png" alt="twitter_icon" height="30" width="30">
+        </a>
+      </div>
+
+      <div id="googleMap" style="width:800px;height:380px;"></div>
+    </div>
+  </div> <!-- end of contact-adress -->
+</div> <!-- end of body-text -->
+          
+  <h2>Leave Us a Message</h2>
+    <form method="post" class="contact-form">
+      <input class="form-field" name="name" type="text" placeholder="Name" id="name">
+      <input class="form-field" name="email" type="text" placeholder="Email" id="email">
+      <input class="form-field" name="subject" type="text" placeholder="Subject" id="subject">
+      <textarea name="text" id="comment" placeholder="Speak your mind"></textarea>
+      <button id="send-form-btn">Send</button>
+    </form>
+  </section>
+    
+  <script src="js/jquery.js"> </script>
+  <script src="js/menu.js"> </script>
+
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+      </div> <!-- end of social-icons -->
+        <div class="design-by">
+           <p>All design rights by Danni Shi and Pan Lin @2015
+        </div> <!-- end of design-by -->
+    </div> <!-- end of footer-container -->
+  </footer>
+</body>
+</html>
